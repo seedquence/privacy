@@ -1,0 +1,507 @@
+
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f8f2">
+  <meta name="description" content="Datenschutzerklärung für Seedquence – Game Center, iCloud, AdMob und lokale Benachrichtigungen.">
+  <title>Datenschutz · Seedquence</title>
+  <style>
+    :root {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color-scheme: light;
+      --bg: #f5f8f2;
+      --surface: #fff;
+      --ink: #1d3025;
+      --muted: #66776c;
+      --line: #e0e9df;
+      --accent: #28774d;
+      --pale: #e8f3e8;
+      --shadow: 0 16px 55px rgba(25,67,37,.07);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--bg); color: var(--ink);
+      line-height: 1.72; font-size: 16px;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    .shell { max-width: 1040px; margin: auto; padding: 0 24px; }
+    .topbar { border-bottom: 1px solid var(--line); background: var(--surface); }
+    .topbar .shell {
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 12px; min-height: 74px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 12px;
+      text-decoration: none; color: var(--ink);
+      font-weight: 800; letter-spacing: -.025em;
+    }
+    .mark {
+      display: grid; place-items: center; width: 39px; height: 39px;
+      border-radius: 13px; background: var(--pale); font-size: 22px;
+    }
+    .navlink {
+      font-size: 13px; font-weight: 650;
+      text-decoration: none; color: var(--muted);
+    }
+    .hero { padding: 76px 0 52px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 13px; background: var(--pale);
+      color: var(--accent); font-size: 12px;
+      letter-spacing: .07em; text-transform: uppercase;
+      font-weight: 800; border-radius: 100px;
+    }
+    .hero h1 {
+      font-size: clamp(38px,6.5vw,66px);
+      letter-spacing: -.058em; line-height: 1.07;
+      margin: 21px 0;
+    }
+    .hero p {
+      max-width: 700px; font-size: 18px;
+      color: var(--muted); margin: 0;
+    }
+    .updated { font-size: 13px; margin-top: 25px; color: var(--muted); }
+    .overview {
+      display: grid; grid-template-columns: repeat(4,1fr);
+      gap: 13px; margin-bottom: 36px;
+    }
+    .mini {
+      padding: 20px; border: 1px solid var(--line);
+      background: var(--surface); border-radius: 18px;
+    }
+    .mini .emoji { font-size: 25px; }
+    .mini strong { display: block; margin: 10px 0 2px; font-size: 14px; }
+    .mini span {
+      display: block; font-size: 12px;
+      color: var(--muted); line-height: 1.5;
+    }
+    .layout {
+      display: grid; grid-template-columns: 220px minmax(0,1fr);
+      gap: 38px; align-items: start; padding-bottom: 78px;
+    }
+    .side { position: sticky; top: 28px; }
+    .side strong {
+      display: block; color: var(--muted); font-size: 12px;
+      letter-spacing: .08em; text-transform: uppercase; margin: 8px 0 10px;
+    }
+    .side a {
+      display: block; padding: 8px 11px; border-radius: 9px;
+      color: var(--muted); text-decoration: none; font-size: 13px;
+    }
+    .side a:hover { background: var(--pale); color: var(--accent); }
+    .content {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 23px; padding: 32px 42px; box-shadow: var(--shadow);
+    }
+    section {
+      scroll-margin-top: 28px; padding: 18px 0 23px;
+      border-bottom: 1px solid var(--line);
+    }
+    section:first-child { padding-top: 0; }
+    section:last-child { border-bottom: 0; padding-bottom: 2px; }
+    h2 {
+      font-size: 21px; letter-spacing: -.03em;
+      line-height: 1.3; margin: 9px 0 13px;
+    }
+    p { margin: 0 0 13px; }
+    p:last-child { margin-bottom: 0; }
+    ul { padding-left: 22px; margin: 10px 0 14px; }
+    li { margin: 5px 0; }
+    .fine { color: var(--muted); }
+    .note {
+      background: var(--pale); border-radius: 13px;
+      padding: 15px 18px; font-size: 14px; margin: 17px 0;
+    }
+    .tag {
+      display: inline-block; background: var(--pale);
+      color: var(--accent); border-radius: 6px;
+      font-size: 11px; padding: 3px 7px; font-weight: 750;
+    }
+    .contact { overflow-wrap: anywhere; }
+    .footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0 36px; font-size: 13px; color: var(--muted);
+    }
+    .footer .shell {
+      display: flex; justify-content: space-between;
+      gap: 18px; flex-wrap: wrap;
+    }
+    @media (max-width:760px) {
+      .hero { padding: 48px 0 36px; }
+      .overview { grid-template-columns: repeat(2,1fr); }
+      .layout { display: block; }
+      .side { position: static; margin-bottom: 20px; }
+      .side a { display: inline-block; }
+      .content { padding: 22px 23px; border-radius: 19px; }
+      .hero p { font-size: 16px; }
+    }
+    @media (max-width:390px) {
+      .mini { padding: 13px; }
+    }
+    @media (prefers-color-scheme:dark) {
+      :root {
+        color-scheme: dark;
+        --bg: #101b15;
+        --surface: #17271e;
+        --ink: #ecf5ed;
+        --muted: #b2c5b7;
+        --line: #31473a;
+        --accent: #91d6a5;
+        --pale: #263f30;
+        --shadow: none;
+      }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      html { scroll-behavior: auto; }
+    }
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="shell">
+    <a class="brand" href="#start">
+      <span class="mark">🌱</span>
+      <span>Seedquence</span>
+    </a>
+    <a class="navlink" href="#kontakt">Kontakt ↗</a>
+  </div>
+</header>
+
+<main id="start" class="shell">
+  <div class="hero">
+    <span class="eyebrow">🌿 Transparenz & Datenschutz</span>
+    <h1>Deine Daten.<br>Deine Entscheidung.</h1>
+    <p>
+      Hier erfährst du, welche Daten bei der Nutzung von Seedquence
+      verarbeitet werden – und wie du deine Privatsphäre kontrollieren kannst.
+    </p>
+    <div class="updated">
+      Datenschutzerklärung · Stand: 15. Oktober 2026
+    </div>
+  </div>
+
+  <div class="overview">
+    <div class="mini">
+      <div class="emoji">🏆</div>
+      <strong>Game Center</strong>
+      <span>Globale Ranglisten über Apple</span>
+    </div>
+    <div class="mini">
+      <div class="emoji">☁️</div>
+      <strong>iCloud</strong>
+      <span>Speichern & Synchronisieren</span>
+    </div>
+    <div class="mini">
+      <div class="emoji">📣</div>
+      <strong>AdMob</strong>
+      <span>Werbung durch Google</span>
+    </div>
+    <div class="mini">
+      <div class="emoji">🔔</div>
+      <strong>Erinnerungen</strong>
+      <span>Lokale iOS-Mitteilungen</span>
+    </div>
+  </div>
+
+  <div class="layout">
+    <nav class="side" aria-label="Abschnitte">
+      <strong>Inhalt</strong>
+      <a href="#verantwortlicher">01 · Verantwortlicher</a>
+      <a href="#ueberblick">02 · Allgemeines</a>
+      <a href="#lokal">03 · Lokale Spieldaten</a>
+      <a href="#icloud">04 · iCloud</a>
+      <a href="#gamecenter">05 · Game Center</a>
+      <a href="#admob">06 · Werbung</a>
+      <a href="#einwilligung">07 · Deine Werbewahl</a>
+      <a href="#hinweise">08 · Erinnerungen</a>
+      <a href="#rechtliches">09 · Rechtsgrundlagen</a>
+      <a href="#rechte">10 · Deine Rechte</a>
+      <a href="#kontakt">11 · Kontakt</a>
+    </nav>
+
+    <article class="content">
+
+      <section id="verantwortlicher">
+        <h2>01. Verantwortlicher</h2>
+        <p>Verantwortlich für die Datenverarbeitung im Zusammenhang mit Seedquence ist:</p>
+        <p class="contact">
+          <strong>[NAME / UNTERNEHMEN]</strong><br>
+          [POSTANSCHRIFT]<br>
+          <a href="mailto:[KONTAKT-EMAIL]">[KONTAKT-EMAIL]</a>
+        </p>
+      </section>
+
+      <section id="ueberblick">
+        <h2>02. Allgemeine Informationen</h2>
+        <p>
+          Seedquence ist ein mobiles Pflanzen-Spiel für iOS.
+          Das Spiel verwendet Apple Game Center für Ranglisten,
+          iCloud für die Speicherung und Synchronisierung von App-Daten
+          und Google AdMob für Werbeanzeigen.
+        </p>
+        <p>
+          Spielerinnerungen werden lokal auf dem Gerät geplant.
+          Für die Nutzung wird kein separates Benutzerkonto bei uns angelegt.
+          Bestimmte Apple-Funktionen setzen einen Apple Account voraus.
+        </p>
+      </section>
+
+      <section id="lokal">
+        <h2>03. Lokale Spieldaten</h2>
+        <p>
+          Während des Spielens werden Daten wie Pflanzenfortschritt,
+          Spieleinstellungen und weitere Spielfunktionen auf deinem
+          Gerät verarbeitet.
+        </p>
+        <p>
+          Wir betreiben hierfür keinen eigenen Spielstandsserver.
+          Soweit die iCloud-Synchronisierung aktiviert ist,
+          können entsprechende App-Daten zusätzlich über iCloud
+          gespeichert oder zwischen deinen Geräten synchronisiert werden.
+        </p>
+      </section>
+
+      <section id="icloud">
+        <h2>04. Speicherung über Apple iCloud</h2>
+        <p>
+          Die App verwendet Apple iCloud, um App-Daten deinem Apple Account
+          zuzuordnen, zu speichern und gegebenenfalls auf weiteren
+          Geräten bereitzustellen.
+        </p>
+        <p>
+          Abhängig von der App-Funktion können dazu Spielfortschritt,
+          Pflanzenstatus und Einstellungen gehören.
+        </p>
+        <p>
+          Diese Daten werden über die iCloud-Dienste von Apple verarbeitet.
+          Wir betreiben dafür keine eigenen Cloud-Server.
+        </p>
+        <p>
+          Welche iCloud-Daten du verwalten oder löschen kannst,
+          richtet sich nach den iCloud-Einstellungen und den
+          Funktionen der App.
+        </p>
+        <p>
+          Weitere Informationen:
+          <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">
+            Apple Datenschutzrichtlinie
+          </a>
+        </p>
+      </section>
+
+      <section id="gamecenter">
+        <h2>05. Apple Game Center</h2>
+        <p>
+          Für die globale Rangliste verwendet die App Apple Game Center.
+          Beim Verwenden dieser Funktion können insbesondere deine
+          Game-Center-Spielerkennung, dein Anzeigename sowie
+          eingereichte Punktestände und Ranglistenpositionen
+          verarbeitet werden.
+        </p>
+        <p>
+          Bestimmte Ranglisteninformationen, beispielsweise
+          Anzeigename und Punktestand, können für andere
+          Game-Center-Spieler sichtbar sein.
+        </p>
+        <p>
+          Die Ranglisteninfrastruktur wird von Apple bereitgestellt.
+          Für dein Game-Center-Profil und zugehörige Einstellungen
+          stehen dir die Verwaltungsfunktionen von Apple zur Verfügung.
+        </p>
+        <p>
+          Weitere Informationen:
+          <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">
+            Apple Datenschutzrichtlinie
+          </a>
+        </p>
+      </section>
+
+      <section id="admob">
+        <h2>06. Werbung mit Google AdMob</h2>
+        <p>
+          Zur Finanzierung der kostenlosen App verwenden wir Google AdMob,
+          einen Werbedienst von Google Ireland Limited,
+          Gordon House, Barrow Street, Dublin 4, Irland.
+        </p>
+        <p>
+          Bei der Anzeige von Werbung können Google und gegebenenfalls
+          beteiligte Werbepartner Daten verarbeiten, beispielsweise:
+        </p>
+        <ul>
+          <li>IP-Adresse und daraus abgeleitete ungefähre Standortinformationen</li>
+          <li>Geräteinformationen und Kennungen, einschließlich Werbekennung, soweit erlaubt</li>
+          <li>Informationen über Anzeigenaufrufe und Interaktionen</li>
+          <li>Technische Diagnose- und Leistungsinformationen</li>
+        </ul>
+        <p>
+          Diese Informationen können für die Bereitstellung,
+          Messung, Sicherheit und – soweit rechtlich zulässig
+          und mit entsprechender Einwilligung – Personalisierung
+          von Werbung verwendet werden.
+        </p>
+        <p>
+          Der genaue Umfang hängt von den Datenschutzeinstellungen,
+          dem Gerät und den eingesetzten Werbepartnern ab.
+        </p>
+        <p>
+          Weitere Informationen:
+          <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer">
+            Google Datenschutzerklärung
+          </a>
+          und
+          <a href="https://policies.google.com/technologies/partner-sites?hl=de" target="_blank" rel="noopener noreferrer">
+            So verwendet Google Daten
+          </a>.
+        </p>
+      </section>
+
+      <section id="einwilligung">
+        <h2>07. Einwilligung und Werbeeinstellungen</h2>
+        <p>
+          Soweit gesetzlich erforderlich, fragen wir vor der
+          entsprechenden Werbedatenverarbeitung nach deiner Einwilligung.
+        </p>
+        <p>
+          Die Verwaltung der Auswahl kann über eine in der App
+          eingebundene Einwilligungslösung (Google User Messaging Platform)
+          erfolgen.
+        </p>
+        <p>
+          Sofern für dich Datenschutzoptionen angeboten werden,
+          kannst du deine Entscheidung in der App über
+          <strong>Einstellungen → Datenschutzoptionen</strong>
+          ändern oder widerrufen.
+        </p>
+        <p>
+          Falls ein Zugriff auf die iOS-Werbekennung für Tracking
+          vorgesehen ist, fragen wir – soweit von Apple vorgeschrieben –
+          zusätzlich über die iOS-Systemabfrage nach deiner Erlaubnis.
+        </p>
+        <p>
+          Diese kannst du unter
+          <strong>iOS-Einstellungen → Datenschutz & Sicherheit → Tracking</strong>
+          verwalten.
+        </p>
+        <div class="note">
+          Eine Ablehnung personalisierter Werbung bedeutet nicht zwingend,
+          dass keine Werbung mehr angezeigt wird.
+          Je nach Einwilligungsstatus und Rechtslage können andere
+          Anzeigenformen angezeigt werden.
+        </div>
+      </section>
+
+      <section id="hinweise">
+        <h2>
+          08. Optionale lokale Benachrichtigungen
+          <span class="tag">Ohne eigenen Push-Server</span>
+        </h2>
+        <p>
+          Die App kann dich auf Wunsch lokal an die Pflege deiner
+          Pflanzen erinnern.
+        </p>
+        <p>
+          Diese Erinnerungen werden direkt auf deinem iPhone
+          geplant und ausgelöst. Dafür übermitteln wir weder
+          ein Push-Token noch Erinnerungsinhalte an einen
+          eigenen Benachrichtigungsserver.
+        </p>
+        <p>
+          Du kannst diese Benachrichtigungen jederzeit unter
+          <strong>iOS-Einstellungen → Mitteilungen → Seedquence</strong>
+          deaktivieren.
+        </p>
+      </section>
+
+      <section id="rechtliches">
+        <h2>09. Rechtsgrundlagen, Empfänger und Aufbewahrung</h2>
+        <p>
+          Soweit die Datenschutz-Grundverordnung (DSGVO)
+          anwendbar ist, stützen wir Datenverarbeitungen
+          je nach Zweck und konkreter Ausgestaltung auf die
+          hierfür einschlägige Rechtsgrundlage.
+        </p>
+        <p>
+          Dies kann insbesondere die Erfüllung eines Vertrags
+          (Art. 6 Abs. 1 lit. b DSGVO), deine Einwilligung
+          (Art. 6 Abs. 1 lit. a DSGVO) oder – soweit zulässig –
+          ein berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO) sein.
+        </p>
+        <p>
+          Soweit eine Einwilligung erforderlich ist,
+          holen wir diese vor der betreffenden Verarbeitung ein.
+        </p>
+        <p>
+          Zu den beteiligten Anbietern zählen Apple
+          (iCloud und Game Center) und Google (AdMob).
+        </p>
+        <p>
+          Dabei können Daten auch außerhalb des Europäischen
+          Wirtschaftsraums verarbeitet werden.
+          Angaben zu den jeweiligen Übermittlungen und Schutzmaßnahmen
+          finden sich in den Datenschutzinformationen der Anbieter.
+        </p>
+        <p>
+          Lokal gespeicherte Daten können bei einer Deinstallation
+          entfernt werden; in iCloud gespeicherte Daten können
+          unabhängig davon fortbestehen.
+        </p>
+        <p>
+          Für durch Apple oder Google gespeicherte Daten gelten
+          die jeweiligen Aufbewahrungs- und Löschverfahren dieser Anbieter.
+        </p>
+      </section>
+
+      <section id="rechte">
+        <h2>10. Deine Datenschutzrechte</h2>
+        <p>
+          Wenn die DSGVO anwendbar ist, hast du unter den gesetzlichen
+          Voraussetzungen Rechte auf Auskunft, Berichtigung, Löschung,
+          Einschränkung der Verarbeitung und Datenübertragbarkeit
+          sowie gegebenenfalls ein Widerspruchsrecht.
+        </p>
+        <p>
+          Eine erteilte Einwilligung kannst du für die Zukunft widerrufen.
+          Zudem kannst du dich bei einer zuständigen
+          Datenschutzaufsichtsbehörde beschweren.
+        </p>
+        <p>
+          Für Anfragen zur Verarbeitung durch uns kannst du die
+          unten angegebene Kontaktadresse verwenden.
+          Apple- und Google-Kontoeinstellungen verwaltest du
+          über die jeweiligen Anbieter.
+        </p>
+      </section>
+
+      <section id="kontakt">
+        <h2>11. Kontakt & Änderungen</h2>
+        <p>Fragen zum Datenschutz? Schreib uns gerne:</p>
+        <p class="contact">
+          <a href="mailto:[KONTAKT-EMAIL]">
+            <strong>[KONTAKT-EMAIL]</strong>
+          </a>
+        </p>
+        <p>
+          Wir aktualisieren diese Datenschutzerklärung, wenn sich
+          App-Funktionen, eingesetzte Dienste oder rechtliche
+          Anforderungen ändern.
+          Die aktuelle Fassung ist jederzeit über diese Seite verfügbar.
+        </p>
+      </section>
+
+    </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="shell">
+    <span>© 2026 Seedquence · Mit Sorgfalt gestaltet 🌱</span>
+    <span>Datenschutz · Version 1.0</span>
+  </div>
+</footer>
+</body>
+</html>
