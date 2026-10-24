@@ -12,13 +12,14 @@ progress tracking, and global leaderboards.
 
 - Apple Game Center – Global leaderboards
 - Apple iCloud – Game progress synchronization
-- Google AdMob – Advertising
 - Local Notifications – Plant care reminders
 
 ## Privacy Policy
 
-The privacy policy is available in `index.html`.
+The official privacy policy is available at:
+
+https://seedquence.github.io/privacy/
 
 ## Status
 
-🚧 Currently under development.
+🟢 Live
