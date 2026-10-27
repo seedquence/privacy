@@ -1,14 +1,15 @@
 
-<!doctype html>
-<html lang="de">
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#f5f8f2">
-  <meta name="description" content="Datenschutzerklärung für Seedquence – Game Center, iCloud und lokale Benachrichtigungen.">
-  <title>Datenschutz · Seedquence</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="light dark" name="color-scheme"/>
+<meta content="#f5f8f2" name="theme-color"/>
+<meta content="Privacy Policy for Seedquence – Game Center, iCloud, and local notifications." name="description"/>
+<title>Privacy Policy · Seedquence</title>
+<style>
     :root {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color-scheme: light;
@@ -160,265 +161,362 @@
       html { scroll-behavior: auto; }
     }
   </style>
-</head>
+<style>
+  [hidden] { display: none !important; }
+  .header-actions { display:flex; align-items:center; gap: 16px; }
+  .language-switch { display:flex; gap:4px; }
+  .lang-button { cursor:pointer; border: 1px solid var(--line); border-radius:9px; padding:6px 10px; font:inherit; font-size:13px; font-weight:750; color:var(--muted); background:var(--surface); }
+  .lang-button.active { background:var(--pale); border-color:var(--accent); color:var(--accent); }
+  .lang-button:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  @media (max-width:390px) { .header-actions { gap:10px; } }
+</style></head>
 <body>
 <header class="topbar">
-  <div class="shell">
-    <a class="brand" href="#start">
-      <span class="mark">🌱</span>
-      <span>Seedquence</span>
-    </a>
-    <a class="navlink" href="#kontakt">Kontakt ↗</a>
-  </div>
+<div class="shell">
+<a class="brand" href="#start"><span class="mark">🌱</span><span>Seedquence</span></a>
+<div aria-label="Language / Sprache" class="header-actions language-switch" role="group"><a class="navlink" href="#kontakt" id="contact-link">Contact ↗</a><button aria-pressed="true" class="lang-button active" data-switch-language="en" lang="en" type="button">EN</button><button aria-pressed="false" class="lang-button" data-switch-language="de" lang="de" type="button">DE</button></div>
+</div>
 </header>
-
-<main id="start" class="shell">
-  <div class="hero">
-    <span class="eyebrow">🌿 Transparenz & Datenschutz</span>
-    <h1>Deine Daten.<br>Deine Entscheidung.</h1>
-    <p>
+<main class="shell language-content" data-language="en" id="start">
+<div class="hero">
+<span class="eyebrow">🌿 Transparency &amp; Privacy</span>
+<h1>Your data.<br/>Your choice.</h1>
+<p>Learn what data is processed when you use Seedquence and how you can control your privacy.</p>
+<div class="updated">Privacy Policy · Last updated: October 24, 2026</div>
+</div>
+<div class="overview">
+<div class="mini"><div class="emoji">🏆</div><strong>Game Center</strong><span>Global leaderboards via Apple</span></div>
+<div class="mini"><div class="emoji">☁️</div><strong>iCloud</strong><span>Storage &amp; synchronization</span></div>
+<div class="mini"><div class="emoji">🔔</div><strong>Reminders</strong><span>Local iOS notifications</span></div>
+</div>
+<div class="layout">
+<nav aria-label="Sections" class="side">
+<strong>Contents</strong>
+<a href="#verantwortlicher">01 · Data Controller</a>
+<a href="#ueberblick">02 · General Information</a>
+<a href="#lokal">03 · Local Game Data</a>
+<a href="#icloud">04 · iCloud</a>
+<a href="#gamecenter">05 · Game Center</a>
+<a href="#hinweise">06 · Reminders</a>
+<a href="#rechtliches">07 · Legal Bases</a>
+<a href="#rechte">08 · Your Rights</a>
+<a href="#kontakt">09 · Contact</a>
+</nav>
+<article class="content">
+<section id="verantwortlicher">
+<h2>01. Data Controller</h2>
+<p>The person responsible for data processing in connection with Seedquence is:</p>
+<p class="contact"><strong>Marco Mareiner</strong><br/><a href="mailto:seedquence.support@gmail.com">Seedquence Support</a></p>
+</section>
+<section id="ueberblick">
+<h2>02. General Information</h2>
+<p>Seedquence is a mobile plant-themed game for iOS. The game uses Apple Game Center for leaderboards and iCloud to store and synchronize app data.</p>
+<p>Game reminders are scheduled locally on the device. You do not need to create a separate account with us to use the app. Certain Apple features require an Apple Account.</p>
+</section>
+<section id="lokal">
+<h2>03. Local Game Data</h2>
+<p>As you play, data such as plant progress, game settings, and other game-related information is processed on your device.</p>
+<p>We do not operate our own server for storing game progress. If iCloud synchronization is enabled, relevant app data may also be stored in iCloud or synchronized across your devices.</p>
+</section>
+<section id="icloud">
+<h2>04. Storage via Apple iCloud</h2>
+<p>The app uses Apple iCloud to associate app data with your Apple Account, store it, and, where applicable, make it available on your other devices.</p>
+<p>Depending on the app feature, this may include game progress, plant status, and settings.</p>
+<p>This data is processed through Apple's iCloud services. We do not operate our own cloud servers for this purpose.</p>
+<p>The iCloud data you can manage or delete depends on your iCloud settings and the app's features.</p>
+<p>More information: <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer" target="_blank">Apple Privacy Policy</a></p>
+</section>
+<section id="gamecenter">
+<h2>05. Apple Game Center</h2>
+<p>The app uses Apple Game Center for its global leaderboard. When you use this feature, information such as your Game Center player identifier, display name, submitted scores, and leaderboard rankings may be processed.</p>
+<p>Certain leaderboard information, such as your display name and score, may be visible to other Game Center players.</p>
+<p>Apple provides the leaderboard infrastructure. You can use Apple's account management features to manage your Game Center profile and related settings.</p>
+<p>More information: <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer" target="_blank">Apple Privacy Policy</a></p>
+</section>
+<section id="hinweise">
+<h2>06. Optional Local Notifications <span class="tag">No proprietary push server</span></h2>
+<p>If you choose, the app can remind you to care for your plants through local notifications.</p>
+<p>These reminders are scheduled and triggered directly on your iPhone. We do not transmit a push token or reminder content to a notification server operated by us.</p>
+<p>You can disable these notifications at any time under <strong>iOS Settings → Notifications → Seedquence</strong>.</p>
+</section>
+<section id="rechtliches">
+<h2>07. Legal Bases, Recipients, and Retention</h2>
+<p>Where the General Data Protection Regulation (GDPR) applies, we base data processing on the relevant legal basis according to its purpose and specific circumstances.</p>
+<p>This may include, in particular, performance of a contract (Article 6(1)(b) GDPR), your consent (Article 6(1)(a) GDPR), or, where permitted, legitimate interests (Article 6(1)(f) GDPR).</p>
+<p>Where consent is required, we obtain it before the relevant processing takes place.</p>
+<p>Apple (iCloud and Game Center) is among the service providers involved.</p>
+<p>Data may also be processed outside the European Economic Area. Information on applicable transfers and safeguards can be found in the privacy notices of the respective providers.</p>
+<p>Locally stored data may be removed when you uninstall the app; data stored in iCloud may remain independently of the app's installation status.</p>
+<p>Data stored by Apple is subject to the respective provider's retention and deletion procedures.</p>
+</section>
+<section id="rechte">
+<h2>08. Your Privacy Rights</h2>
+<p>Where the GDPR applies, and subject to statutory requirements, you have rights of access, rectification, erasure, restriction of processing, and data portability, as well as a right to object where applicable.</p>
+<p>You can withdraw any consent you have given with effect for the future. You also have the right to lodge a complaint with a competent data protection supervisory authority.</p>
+<p>For inquiries about processing carried out by us, please use the contact address below. You can manage your Apple Account settings through the respective provider.</p>
+</section>
+<section id="kontakt">
+<h2>09. Contact &amp; Changes</h2>
+<p>Questions about privacy? Feel free to contact us:</p>
+<p class="contact"><a href="mailto:seedquence.support@gmail.com"><strong>Seedquence Support</strong></a></p>
+<p>We update this Privacy Policy if app features, the services we use, or legal requirements change. The current version is always available on this page.</p>
+</section>
+</article>
+</div>
+</main>
+<footer class="footer language-content" data-language="en"><div class="shell"><span>© 2026 Seedquence · Crafted with care 🌱</span><span>Privacy Policy · Version 1.1</span></div></footer>
+<main class="shell language-content" data-language="de" hidden="" id="de-start">
+<div class="hero">
+<span class="eyebrow">🌿 Transparenz &amp; Datenschutz</span>
+<h1>Deine Daten.<br/>Deine Entscheidung.</h1>
+<p>
       Hier erfährst du, welche Daten bei der Nutzung von Seedquence
       verarbeitet werden – und wie du deine Privatsphäre kontrollieren kannst.
     </p>
-    <div class="updated">
+<div class="updated">
       Datenschutzerklärung · Stand: 24. Oktober 2026
     </div>
-  </div>
-
-  <div class="overview">
-    <div class="mini">
-      <div class="emoji">🏆</div>
-      <strong>Game Center</strong>
-      <span>Globale Ranglisten über Apple</span>
-    </div>
-    <div class="mini">
-      <div class="emoji">☁️</div>
-      <strong>iCloud</strong>
-      <span>Speichern & Synchronisieren</span>
-    </div>
-    <div class="mini">
-      <div class="emoji">🔔</div>
-      <strong>Erinnerungen</strong>
-      <span>Lokale iOS-Mitteilungen</span>
-    </div>
-  </div>
-
-  <div class="layout">
-    <nav class="side" aria-label="Abschnitte">
-      <strong>Inhalt</strong>
-      <a href="#verantwortlicher">01 · Verantwortlicher</a>
-      <a href="#ueberblick">02 · Allgemeines</a>
-      <a href="#lokal">03 · Lokale Spieldaten</a>
-      <a href="#icloud">04 · iCloud</a>
-      <a href="#gamecenter">05 · Game Center</a>
-      <a href="#hinweise">06 · Erinnerungen</a>
-      <a href="#rechtliches">07 · Rechtsgrundlagen</a>
-      <a href="#rechte">08 · Deine Rechte</a>
-      <a href="#kontakt">09 · Kontakt</a>
-    </nav>
-
-    <article class="content">
-
-      <section id="verantwortlicher">
-        <h2>01. Verantwortlicher</h2>
-        <p>Verantwortlich für die Datenverarbeitung im Zusammenhang mit Seedquence ist:</p>
-        <p class="contact">
-          <strong>Marco Mareiner</strong><br>
-          <a href="mailto:seedquence.support@gmail.com">Seedquence Support</a>
-        </p>
-      </section>
-
-      <section id="ueberblick">
-        <h2>02. Allgemeine Informationen</h2>
-        <p>
+</div>
+<div class="overview">
+<div class="mini">
+<div class="emoji">🏆</div>
+<strong>Game Center</strong>
+<span>Globale Ranglisten über Apple</span>
+</div>
+<div class="mini">
+<div class="emoji">☁️</div>
+<strong>iCloud</strong>
+<span>Speichern &amp; Synchronisieren</span>
+</div>
+<div class="mini">
+<div class="emoji">🔔</div>
+<strong>Erinnerungen</strong>
+<span>Lokale iOS-Mitteilungen</span>
+</div>
+</div>
+<div class="layout">
+<nav aria-label="Abschnitte" class="side">
+<strong>Inhalt</strong>
+<a href="#de-verantwortlicher">01 · Verantwortlicher</a>
+<a href="#de-ueberblick">02 · Allgemeines</a>
+<a href="#de-lokal">03 · Lokale Spieldaten</a>
+<a href="#de-icloud">04 · iCloud</a>
+<a href="#de-gamecenter">05 · Game Center</a>
+<a href="#de-hinweise">06 · Erinnerungen</a>
+<a href="#de-rechtliches">07 · Rechtsgrundlagen</a>
+<a href="#de-rechte">08 · Deine Rechte</a>
+<a href="#de-kontakt">09 · Kontakt</a>
+</nav>
+<article class="content">
+<section id="de-verantwortlicher">
+<h2>01. Verantwortlicher</h2>
+<p>Verantwortlich für die Datenverarbeitung im Zusammenhang mit Seedquence ist:</p>
+<p class="contact">
+<strong>Marco Mareiner</strong><br/>
+<a href="mailto:seedquence.support@gmail.com">Seedquence Support</a>
+</p>
+</section>
+<section id="de-ueberblick">
+<h2>02. Allgemeine Informationen</h2>
+<p>
           Seedquence ist ein mobiles Pflanzen-Spiel für iOS.
           Das Spiel verwendet Apple Game Center für Ranglisten
           und iCloud für die Speicherung und Synchronisierung von App-Daten.
         </p>
-        <p>
+<p>
           Spielerinnerungen werden lokal auf dem Gerät geplant.
           Für die Nutzung wird kein separates Benutzerkonto bei uns angelegt.
           Bestimmte Apple-Funktionen setzen einen Apple Account voraus.
         </p>
-      </section>
-
-      <section id="lokal">
-        <h2>03. Lokale Spieldaten</h2>
-        <p>
+</section>
+<section id="de-lokal">
+<h2>03. Lokale Spieldaten</h2>
+<p>
           Während des Spielens werden Daten wie Pflanzenfortschritt,
           Spieleinstellungen und weitere Spielfunktionen auf deinem
           Gerät verarbeitet.
         </p>
-        <p>
+<p>
           Wir betreiben hierfür keinen eigenen Spielstandsserver.
           Soweit die iCloud-Synchronisierung aktiviert ist,
           können entsprechende App-Daten zusätzlich über iCloud
           gespeichert oder zwischen deinen Geräten synchronisiert werden.
         </p>
-      </section>
-
-      <section id="icloud">
-        <h2>04. Speicherung über Apple iCloud</h2>
-        <p>
+</section>
+<section id="de-icloud">
+<h2>04. Speicherung über Apple iCloud</h2>
+<p>
           Die App verwendet Apple iCloud, um App-Daten deinem Apple Account
           zuzuordnen, zu speichern und gegebenenfalls auf weiteren
           Geräten bereitzustellen.
         </p>
-        <p>
+<p>
           Abhängig von der App-Funktion können dazu Spielfortschritt,
           Pflanzenstatus und Einstellungen gehören.
         </p>
-        <p>
+<p>
           Diese Daten werden über die iCloud-Dienste von Apple verarbeitet.
           Wir betreiben dafür keine eigenen Cloud-Server.
         </p>
-        <p>
+<p>
           Welche iCloud-Daten du verwalten oder löschen kannst,
           richtet sich nach den iCloud-Einstellungen und den
           Funktionen der App.
         </p>
-        <p>
+<p>
           Weitere Informationen:
-          <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer" target="_blank">
             Apple Datenschutzrichtlinie
           </a>
-        </p>
-      </section>
-
-      <section id="gamecenter">
-        <h2>05. Apple Game Center</h2>
-        <p>
+</p>
+</section>
+<section id="de-gamecenter">
+<h2>05. Apple Game Center</h2>
+<p>
           Für die globale Rangliste verwendet die App Apple Game Center.
           Beim Verwenden dieser Funktion können insbesondere deine
           Game-Center-Spielerkennung, dein Anzeigename sowie
           eingereichte Punktestände und Ranglistenpositionen
           verarbeitet werden.
         </p>
-        <p>
+<p>
           Bestimmte Ranglisteninformationen, beispielsweise
           Anzeigename und Punktestand, können für andere
           Game-Center-Spieler sichtbar sein.
         </p>
-        <p>
+<p>
           Die Ranglisteninfrastruktur wird von Apple bereitgestellt.
           Für dein Game-Center-Profil und zugehörige Einstellungen
           stehen dir die Verwaltungsfunktionen von Apple zur Verfügung.
         </p>
-        <p>
+<p>
           Weitere Informationen:
-          <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer" target="_blank">
             Apple Datenschutzrichtlinie
           </a>
-        </p>
-      </section>
-
-      <section id="hinweise">
-        <h2>
+</p>
+</section>
+<section id="de-hinweise">
+<h2>
           06. Optionale lokale Benachrichtigungen
           <span class="tag">Ohne eigenen Push-Server</span>
-        </h2>
-        <p>
+</h2>
+<p>
           Die App kann dich auf Wunsch lokal an die Pflege deiner
           Pflanzen erinnern.
         </p>
-        <p>
+<p>
           Diese Erinnerungen werden direkt auf deinem iPhone
           geplant und ausgelöst. Dafür übermitteln wir weder
           ein Push-Token noch Erinnerungsinhalte an einen
           eigenen Benachrichtigungsserver.
         </p>
-        <p>
+<p>
           Du kannst diese Benachrichtigungen jederzeit unter
           <strong>iOS-Einstellungen → Mitteilungen → Seedquence</strong>
           deaktivieren.
         </p>
-      </section>
-
-      <section id="rechtliches">
-        <h2>07. Rechtsgrundlagen, Empfänger und Aufbewahrung</h2>
-        <p>
+</section>
+<section id="de-rechtliches">
+<h2>07. Rechtsgrundlagen, Empfänger und Aufbewahrung</h2>
+<p>
           Soweit die Datenschutz-Grundverordnung (DSGVO)
           anwendbar ist, stützen wir Datenverarbeitungen
           je nach Zweck und konkreter Ausgestaltung auf die
           hierfür einschlägige Rechtsgrundlage.
         </p>
-        <p>
+<p>
           Dies kann insbesondere die Erfüllung eines Vertrags
           (Art. 6 Abs. 1 lit. b DSGVO), deine Einwilligung
           (Art. 6 Abs. 1 lit. a DSGVO) oder – soweit zulässig –
           ein berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO) sein.
         </p>
-        <p>
+<p>
           Soweit eine Einwilligung erforderlich ist,
           holen wir diese vor der betreffenden Verarbeitung ein.
         </p>
-        <p>
+<p>
           Zu den beteiligten Anbietern zählt Apple
           (iCloud und Game Center).
         </p>
-        <p>
+<p>
           Dabei können Daten auch außerhalb des Europäischen
           Wirtschaftsraums verarbeitet werden.
           Angaben zu den jeweiligen Übermittlungen und Schutzmaßnahmen
           finden sich in den Datenschutzinformationen der Anbieter.
         </p>
-        <p>
+<p>
           Lokal gespeicherte Daten können bei einer Deinstallation
           entfernt werden; in iCloud gespeicherte Daten können
           unabhängig davon fortbestehen.
         </p>
-        <p>
+<p>
           Für durch Apple gespeicherte Daten gelten
           die jeweiligen Aufbewahrungs- und Löschverfahren dieser Anbieter.
         </p>
-      </section>
-
-      <section id="rechte">
-        <h2>08. Deine Datenschutzrechte</h2>
-        <p>
+</section>
+<section id="de-rechte">
+<h2>08. Deine Datenschutzrechte</h2>
+<p>
           Wenn die DSGVO anwendbar ist, hast du unter den gesetzlichen
           Voraussetzungen Rechte auf Auskunft, Berichtigung, Löschung,
           Einschränkung der Verarbeitung und Datenübertragbarkeit
           sowie gegebenenfalls ein Widerspruchsrecht.
         </p>
-        <p>
+<p>
           Eine erteilte Einwilligung kannst du für die Zukunft widerrufen.
           Zudem kannst du dich bei einer zuständigen
           Datenschutzaufsichtsbehörde beschweren.
         </p>
-        <p>
+<p>
           Für Anfragen zur Verarbeitung durch uns kannst du die
           unten angegebene Kontaktadresse verwenden.
           Apple-Kontoeinstellungen verwaltest du
           über die jeweiligen Anbieter.
         </p>
-      </section>
-
-      <section id="kontakt">
-        <h2>09. Kontakt & Änderungen</h2>
-        <p>Fragen zum Datenschutz? Schreib uns gerne:</p>
-        <p class="contact">
-          <a href="mailto:seedquence.support@gmail.com">
-            <strong>Seedquence Support</strong>
-          </a>
-        </p>
-        <p>
+</section>
+<section id="de-kontakt">
+<h2>09. Kontakt &amp; Änderungen</h2>
+<p>Fragen zum Datenschutz? Schreib uns gerne:</p>
+<p class="contact">
+<a href="mailto:seedquence.support@gmail.com">
+<strong>Seedquence Support</strong>
+</a>
+</p>
+<p>
           Wir aktualisieren diese Datenschutzerklärung, wenn sich
           App-Funktionen, eingesetzte Dienste oder rechtliche
           Anforderungen ändern.
           Die aktuelle Fassung ist jederzeit über diese Seite verfügbar.
         </p>
-      </section>
-
-    </article>
-  </div>
-</main>
-
-<footer class="footer">
-  <div class="shell">
-    <span>© 2026 Seedquence · Mit Sorgfalt gestaltet 🌱</span>
-    <span>Datenschutz · Version 1.1</span>
-  </div>
-</footer>
-</body>
+</section>
+</article>
+</div>
+</main><footer class="footer language-content" data-language="de" hidden="">
+<div class="shell">
+<span>© 2026 Seedquence · Mit Sorgfalt gestaltet 🌱</span>
+<span>Datenschutz · Version 1.1</span>
+</div>
+</footer><script>
+(function () {
+  const buttons = Array.from(document.querySelectorAll('[data-switch-language]'));
+  const contactLink = document.getElementById('contact-link');
+  const brandLink = document.querySelector('.brand');
+  function setLanguage(language) {
+    document.documentElement.lang = language;
+    document.querySelectorAll('[data-language]').forEach(node => { node.hidden = node.dataset.language !== language; });
+    buttons.forEach(button => {
+      const selected = button.dataset.switchLanguage === language;
+      button.classList.toggle('active', selected);
+      button.setAttribute('aria-pressed', String(selected));
+    });
+    contactLink.textContent = language === 'de' ? 'Kontakt ↗' : 'Contact ↗';
+    contactLink.href = language === 'de' ? '#de-kontakt' : '#kontakt';
+    brandLink.href = language === 'de' ? '#de-start' : '#start';
+    document.title = language === 'de' ? 'Datenschutz · Seedquence' : 'Privacy Policy · Seedquence';
+  }
+  buttons.forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.switchLanguage)));
+  setLanguage('en');
+})();
+</script></body>
 </html>
