@@ -174,7 +174,7 @@
 <header class="topbar">
 <div class="shell">
 <a class="brand" href="#start"><span class="mark">🌱</span><span>Seedquence</span></a>
-<div aria-label="Language / Sprache" class="header-actions language-switch" role="group"><a class="navlink" href="#kontakt" id="contact-link">Contact ↗</a><button aria-pressed="true" class="lang-button active" data-switch-language="en" lang="en" type="button">EN</button><button aria-pressed="false" class="lang-button" data-switch-language="de" lang="de" type="button">DE</button></div>
+<div aria-label="Language / Sprache" class="header-actions language-switch" role="group"><a class="navlink" href="#contact" id="contact-link">Contact ↗</a><button aria-pressed="true" class="lang-button active" data-switch-language="en" lang="en" type="button">EN</button><button aria-pressed="false" class="lang-button" data-switch-language="de" lang="de" type="button">DE</button></div>
 </div>
 </header>
 <main class="shell language-content" data-language="en" id="start">
@@ -200,7 +200,7 @@
 <a href="#hinweise">06 · Reminders</a>
 <a href="#rechtliches">07 · Legal Bases</a>
 <a href="#rechte">08 · Your Rights</a>
-<a href="#kontakt">09 · Contact</a>
+<a href="#contact">09 · Contact</a>
 </nav>
 <article class="content">
 <section id="verantwortlicher">
@@ -255,7 +255,7 @@
 <p>You can withdraw any consent you have given with effect for the future. You also have the right to lodge a complaint with a competent data protection supervisory authority.</p>
 <p>For inquiries about processing carried out by us, please use the contact address below. You can manage your Apple Account settings through the respective provider.</p>
 </section>
-<section id="kontakt">
+<section id="contact">
 <h2>09. Contact &amp; Changes</h2>
 <p>Questions about privacy? Feel free to contact us:</p>
 <p class="contact"><a href="mailto:seedquence.support@gmail.com"><strong>Seedquence Support</strong></a></p>
@@ -475,7 +475,7 @@
           über die jeweiligen Anbieter.
         </p>
 </section>
-<section id="contact">
+<section id="de-kontakt">
 <h2>09. Kontakt &amp; Änderungen</h2>
 <p>Fragen zum Datenschutz? Schreib uns gerne:</p>
 <p class="contact">
@@ -511,7 +511,7 @@
       button.setAttribute('aria-pressed', String(selected));
     });
     contactLink.textContent = language === 'de' ? 'Kontakt ↗' : 'Contact ↗';
-    contactLink.href = language === 'de' ? '#de-kontakt' : '#contakt';
+    contactLink.href = language === 'de' ? '#de-kontakt' : '#contact';
     brandLink.href = language === 'de' ? '#de-start' : '#start';
     document.title = language === 'de' ? 'Datenschutz · Seedquence' : 'Privacy Policy · Seedquence';
   }
